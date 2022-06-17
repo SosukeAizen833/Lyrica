@@ -1,0 +1,12 @@
+.headerContainer{
+    display: flex;
+    justify-content:center;
+    background-color: rgba(1, 9, 5, 0.826);
+    padding: 0.4rem 0.5rem 0.8rem 0.5px;
+    color: white;
+    align-items: center;
+}
+.headerTitle{
+    font-family: sans-serif, arial, helvetica;
+    margin: 0px;
+}

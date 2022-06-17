@@ -1,0 +1,23 @@
+.searchContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.searchbar{
+    width: 400px;
+    border-radius: 50px;
+    height: 40px;
+    border: 1px solid;
+    margin: 0px 10px;
+}
+.searchbtn{
+    background-color: rgb(255, 51, 102);
+    margin: 0px 10px;
+    width: 100px;
+    color: white;
+    border: 0px;
+    border-radius: 50px;
+    padding: 0.8rem 0.5rem;
+}

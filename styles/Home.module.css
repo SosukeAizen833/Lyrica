@@ -72,24 +72,50 @@
   flex-wrap: wrap;
   max-width: 800px;
 }
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
 
 .card {
+  background-color: rgb(15, 20, 22);
   margin: 1rem;
   padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+  color: white;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 250px;
+  opacity: 0.9;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in;
+}
+.cardBody{
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardTitle{
+  font-family: inherit;
+}
+.cardContent{
+  max-width: 90%;
+  height: auto;
 }
 
+.thumbnail{
+  max-width: 100%;
+  height: auto;
+}
 .card:hover,
 .card:focus,
 .card:active {
   color: #0070f3;
   border-color: #0070f3;
+  background-color:white;
 }
 
 .card h2 {
@@ -97,11 +123,6 @@
   font-size: 1.5rem;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
 
 .logo {
   height: 1em;
