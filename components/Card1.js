@@ -1,7 +1,7 @@
 import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 
 const Card1 = (props) => (
-  <Card css={{ w: "100%", h: "400px" }} key={props.song.id}>
+  <Card css={{ w: "100%", h: "400px" }}>
     <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
       
     </Card.Header>

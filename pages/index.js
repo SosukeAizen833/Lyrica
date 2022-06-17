@@ -6,7 +6,7 @@ import Search from '../components/Search'
 import {useState,useEffect} from 'react'
 import Card1 from '../components/Card1'
 import { Grid } from "@nextui-org/react";
-
+import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 
 export default function Home(props) {
 
@@ -18,16 +18,13 @@ export default function Home(props) {
       <Header/>
       <Search getResults={searchResults} setResults={setSearchResults}/>
       {searchResults && (
-        <div className={styles.cardContainer}>
-          {searchResults.map((song) =>(
-            <Grid.Container gap={2} justify="center">
-              <Grid xs={12} sm={10}>
-                <Card1 song={song}/>
-              </Grid>
-            </Grid.Container>
-            
-          ))}
-        </div>
+        <Grid.Container gap={2} justify="center">
+            {searchResults.map((song) =>(
+                <Grid xs={12} sm={10} key={song.result.id}>
+                  <Card1 song={song}/>
+                </Grid>
+            ))}
+         </Grid.Container>
       )}
       
     </div>
