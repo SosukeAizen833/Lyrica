@@ -18,9 +18,9 @@ export default function Home(props) {
       <Header/>
       <Search getResults={searchResults} setResults={setSearchResults}/>
       {searchResults && (
-        <Grid.Container gap={2} justify="center">
+        <Grid.Container gap={3} justify="center">
             {searchResults.map((song) =>(
-                <Grid xs={12} sm={10} key={song.result.id}>
+                <Grid xs={12} sm={2.5} key={song.result.id}>
                   <Card1 song={song}/>
                 </Grid>
             ))}
