@@ -11,7 +11,7 @@ import { Card, Col, Row, Button, Text } from "@nextui-org/react";
 export default function Home(props) {
 
   const [searchResults,setSearchResults] = useState(null);
-  const [loaing,setLoading] = useState(false);
+  
 
   return(
     <div>
