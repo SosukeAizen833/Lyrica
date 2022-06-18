@@ -50,7 +50,7 @@ function Search(props){
                         />
                     </Grid>
                     <Grid>
-                        <Button color="gradient" type="submit" auto>{loading ? "Loading..." : "Find"}</Button>
+                        <Button color="gradient" type="submit" auto>{loading ? "..." : "Find"}</Button>
                     </Grid>
                 </Grid.Container>
             </form>
